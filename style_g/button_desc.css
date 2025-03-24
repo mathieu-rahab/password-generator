@@ -1,0 +1,123 @@
+
+
+@media (min-width: 600px)  and (max-height: 1300px){
+  .arrow,
+  .arrow:before{
+    position: absolute;
+    left: 50%;
+ 
+}
+
+.container2 {
+  text-align: center;
+  position: relative;
+  
+  
+}
+
+.contenairArrow1{
+  display: inline-block;
+  background-color: aliceblue;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  opacity: 0.7;
+}
+
+
+
+  
+  .arrow {
+    
+    width: 40px;
+    height: 40px;
+  
+    
+    margin: -80px 0px -10px -20px;
+    transform: none;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+
+   
+  
+  }
+  
+  .arrow:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
+  
+  @keyframes arrow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(10px, 10px);
+    }
+  }
+
+
+
+}
+
+
+  
+  .arrow2,
+  .arrow2:before {
+    position: absolute;
+    left: 50%;
+ 
+    
+}
+  
+  .arrow2 {
+    width: 40px;
+    height: 40px;
+    margin: 100px 0 0 -20px;
+   
+    transform: none;
+    -webkit-transform: rotate(-135deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #06283D solid;
+    border-bottom: 2px #06283D solid;
+    margin-bottom: 100px;
+  }
+  
+  .arrow2:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #06283D solid;
+    border-bottom: 1px #06283D solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow2;
+}
+  
+@keyframes arrow2 {
+  0% {opacity: 1;}
+  100%{
+    opacity: 0;
+    transform: translate(10px, 10px);}}
+
+

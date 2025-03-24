@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../img/icon.png">
+  <title>Générateur de mot de passe</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/main.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/button_desc.css">
+
+  <LINK rel="stylesheet" type="text/css" href="../style_g/lang.css">
+  <LINK rel="stylesheet" href="style/button_copy.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/responsive.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../button_copy.js"></script>
+  <script src="../script.js"></script>
+  <script src="../script_background.js"></script>
+  <script src="../annimtext.js"></script>
+
+</head>
+
+<body>
+
+
+  <div id="background"></div>
+  <div class="deb" id="generator">
+
+
+    <button id="buttonMenu" class="buttonMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
+        <path
+          d="M 24 4 C 22.423103 4 20.902664 4.1994284 19.451172 4.5371094 A 1.50015 1.50015 0 0 0 18.300781 5.8359375 L 17.982422 8.7382812 C 17.878304 9.6893592 17.328913 10.530853 16.5 11.009766 C 15.672739 11.487724 14.66862 11.540667 13.792969 11.15625 L 13.791016 11.15625 L 11.125 9.9824219 A 1.50015 1.50015 0 0 0 9.4257812 10.330078 C 7.3532865 12.539588 5.7626807 15.215064 4.859375 18.201172 A 1.50015 1.50015 0 0 0 5.4082031 19.845703 L 7.7734375 21.580078 C 8.5457929 22.147918 9 23.042801 9 24 C 9 24.95771 8.5458041 25.853342 7.7734375 26.419922 L 5.4082031 28.152344 A 1.50015 1.50015 0 0 0 4.859375 29.796875 C 5.7625845 32.782665 7.3519262 35.460112 9.4257812 37.669922 A 1.50015 1.50015 0 0 0 11.125 38.015625 L 13.791016 36.841797 C 14.667094 36.456509 15.672169 36.511947 16.5 36.990234 C 17.328913 37.469147 17.878304 38.310641 17.982422 39.261719 L 18.300781 42.164062 A 1.50015 1.50015 0 0 0 19.449219 43.460938 C 20.901371 43.799844 22.423103 44 24 44 C 25.576897 44 27.097336 43.800572 28.548828 43.462891 A 1.50015 1.50015 0 0 0 29.699219 42.164062 L 30.017578 39.261719 C 30.121696 38.310641 30.671087 37.469147 31.5 36.990234 C 32.327261 36.512276 33.33138 36.45738 34.207031 36.841797 L 36.875 38.015625 A 1.50015 1.50015 0 0 0 38.574219 37.669922 C 40.646713 35.460412 42.237319 32.782983 43.140625 29.796875 A 1.50015 1.50015 0 0 0 42.591797 28.152344 L 40.226562 26.419922 C 39.454197 25.853342 39 24.95771 39 24 C 39 23.04229 39.454197 22.146658 40.226562 21.580078 L 42.591797 19.847656 A 1.50015 1.50015 0 0 0 43.140625 18.203125 C 42.237319 15.217017 40.646713 12.539588 38.574219 10.330078 A 1.50015 1.50015 0 0 0 36.875 9.984375 L 34.207031 11.158203 C 33.33138 11.54262 32.327261 11.487724 31.5 11.009766 C 30.671087 10.530853 30.121696 9.6893592 30.017578 8.7382812 L 29.699219 5.8359375 A 1.50015 1.50015 0 0 0 28.550781 4.5390625 C 27.098629 4.2001555 25.576897 4 24 4 z M 24 7 C 24.974302 7 25.90992 7.1748796 26.847656 7.3398438 L 27.035156 9.0644531 C 27.243038 10.963375 28.346913 12.652335 30 13.607422 C 31.654169 14.563134 33.668094 14.673009 35.416016 13.904297 L 37.001953 13.207031 C 38.219788 14.669402 39.183985 16.321182 39.857422 18.130859 L 38.451172 19.162109 C 36.911538 20.291529 36 22.08971 36 24 C 36 25.91029 36.911538 27.708471 38.451172 28.837891 L 39.857422 29.869141 C 39.183985 31.678818 38.219788 33.330598 37.001953 34.792969 L 35.416016 34.095703 C 33.668094 33.326991 31.654169 33.436866 30 34.392578 C 28.346913 35.347665 27.243038 37.036625 27.035156 38.935547 L 26.847656 40.660156 C 25.910002 40.82466 24.973817 41 24 41 C 23.025698 41 22.09008 40.82512 21.152344 40.660156 L 20.964844 38.935547 C 20.756962 37.036625 19.653087 35.347665 18 34.392578 C 16.345831 33.436866 14.331906 33.326991 12.583984 34.095703 L 10.998047 34.792969 C 9.7799772 33.330806 8.8159425 31.678964 8.1425781 29.869141 L 9.5488281 28.837891 C 11.088462 27.708471 12 25.91029 12 24 C 12 22.08971 11.087719 20.290363 9.5488281 19.160156 L 8.1425781 18.128906 C 8.8163325 16.318532 9.7814501 14.667839 11 13.205078 L 12.583984 13.902344 C 14.331906 14.671056 16.345831 14.563134 18 13.607422 C 19.653087 12.652335 20.756962 10.963375 20.964844 9.0644531 L 21.152344 7.3398438 C 22.089998 7.1753403 23.026183 7 24 7 z M 24 16 C 19.599487 16 16 19.59949 16 24 C 16 28.40051 19.599487 32 24 32 C 28.400513 32 32 28.40051 32 24 C 32 19.59949 28.400513 16 24 16 z M 24 19 C 26.779194 19 29 21.220808 29 24 C 29 26.779192 26.779194 29 24 29 C 21.220806 29 19 26.779192 19 24 C 19 21.220808 21.220806 19 24 19 z" />
+      </svg>
+      <span>Paramètre</span>
+    </button>
+
+    <div id="sideMenu" class="side-menu">
+      <button id="buttonMenuClose">
+        <img src="../img/annuler.png" alt="retour en arriere">
+      </button>
+      <p class="titleSidemenu">Paramétre</p>
+      <button class="noselect" onclick="setTheme()">
+        <span class='text' id="buttonText">
+          Mode Claire
+        </span>
+        <span class="icon">
+          <img src="../img/sun.png" alt="Icon" class="icon-img" id="iconImage">
+        </span>
+      </button>
+
+
+
+
+      <nav>
+        <ul>
+
+          <li class="menu-deroulant">
+
+            <p><img src="../img/flags/french.png" alt="flag_french" class="flag">Français</p>
+
+            <ul class="sous-menu">
+
+              <li><a href="../en/index.html"> <img src="../img/flags/usa.png" alt="flag" class="flag">English</a></li>
+              <li style="display: none;"><a href="#"> <img src="../img/flags/spain.png" alt="flag_french" class="flag">Español</a></li>
+
+            </ul>
+
+
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+    </div>
+
+
+
+    <div class="menu t1">
+      <h1>Générateur de mot de passe</h1>
+      <form id="checkbox">
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="min" name="min" checked><label
+            for="min" class="checkSelect">Minuscule</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="maj" name="maj" checked><label
+            for="maj" class="checkSelect">Majuscule</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="nb" name="nb" checked><label
+            for="nb" class="checkSelect">Chiffre</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="carac_spec" name="carac_spec"
+            checked><label for="carac_spec" class="checkSelect">Caractère spéciaux</label></div>
+      </form>
+
+      <br>
+
+      <input type="range" class="barre" list="tickmarks" name="nb_carac" id="nb_carac" oninput="ActuNB(this.value)"
+        min="4" max="50" value="12">
+      <!--<datalist id="tickmarks">
+          <option value="4"></option>
+          <option value="10"></option>
+          <option value="15"></option>
+          <option value="20"></option>
+          <option value="25"></option>
+          <option value="30"></option>
+          <option value="35"></option>
+          <option value="40"></option>
+          <option value="45"></option>
+          <option value="50"></option>
+        </datalist>-->
+      <br>
+
+      <p id="afficheLen">
+        Longueur du mot de passe : <output id="output">15</output>
+      </p>
+
+
+
+
+    </div>
+
+
+
+    <div class="result t1">
+      <br><br>
+      <div id="generatePasswordId">
+
+        <span id="password"></span>
+
+        <button class="actu-button" onclick="generatePassword(document.getElementById('nb_carac').value)">
+          <img src="../img/actu_black.png" alt="Bouton actualisation du mdp" class="actu-logo" id="actu-logo">
+        </button>
+        <span id="badge"></span>
+
+      </div>
+
+      <hr id="ligne">
+
+      <div class="container">
+        <button id="copie" class="ClassCopie" onclick="copyToClipboard('#password', this)"></button>
+      </div>
+
+    </div>
+
+    <div class="container2">
+      <div class="contenairArrow1"></div>
+    </div>
+    <a href="#faq">
+      <div class="arrow"></div>
+    </a>
+
+
+
+
+  </div>
+
+
+
+  <div class="faq" id="faq">
+
+
+    <h1 id='annimH1'></h1>
+
+
+    <details>
+      <summary>
+        <h4>Comment les mots de passe sont-ils générés ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Les mots de passe sont générés de manière sécurisée et privée sur votre propre ordinateur. Lorsque vous demandez
+        la génération d'un mot de passe, le processus se déroule uniquement dans votre navigateur web. Aucun mot de
+        passe n'est transmis via Internet ou stocké sur nos serveurs.
+        <br><br>
+        Pour accomplir cela, nous utilisons une méthode de génération de nombres aléatoires cryptographiquement sûre
+        fournie par le navigateur, appelée window.crypto.getRandomValues(). Cette méthode génère des nombres aléatoires
+        à partir d'une source de données aléatoires du système d'exploitation de votre ordinateur. Ces nombres
+        aléatoires sont ensuite utilisés pour choisir les caractères qui composent votre mot de passe.
+        <br><br>
+        En résumé, vous pouvez être assuré(e) que les mots de passe générés sur ce site sont uniques, aléatoires et
+        disponibles uniquement sur votre navigateur. Aucune information concernant ces mots de passe n'est envoyée à nos
+        serveurs ou à d'autres emplacements, ce qui garantit la confidentialité et la sécurité de vos informations.
+        <br><br>
+        Il est à relevé que ce générateur de mot de passe n'a pas été supervisé par un expert en cyber-sécurité
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>Les mots de passe générés sur ce site sont-ils sécurisés ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Oui, les mots de passe générés ici sont sécurisés. La méthode utilisée pour générer les mots de passe est basée
+        sur des valeurs aléatoires cryptographiquement sûres, ce qui les rend extrêmement difficiles à prédire ou à
+        deviner.
+      </p>
+    </details>
+
+
+
+    <details>
+      <summary>
+        <h4>Quels sont les avantages d’utiliser un mot de passe aléatoire ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Un mot de passe aléatoire est plus difficile à deviner ou à pirater qu’un mot de passe basé sur des mots ou des
+        dates personnelles. Il offre donc une meilleure protection de vos comptes et de vos données en ligne.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        <h4>Quelle longueur de mot de passe est recommandée ?</h4>
+
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Il est recommandé de créer des mots de passe d'au moins 12 caractères pour garantir une meilleure sécurité. Plus
+        le mot de passe est long, plus il est difficile à deviner ou à casser.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>Comment mémoriser ou stocker mes mots de passe ? </h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Il n’est pas facile de se souvenir de plusieurs mots de passe aléatoires. Vous pouvez utiliser un gestionnaire
+        de mots de passe, qui est une application ou un service qui stocke et remplit automatiquement vos mots de passe
+        sur les sites web que vous visitez. Vous n’avez alors qu’à retenir un seul mot de passe maître pour accéder à
+        votre gestionnaire. Il existe plusieurs gestionnaires de mots de passe gratuits ou payants, comme Proton Pass,
+        Dashlane ou Bitwarden.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>Quels sont les erreurs à ne pas faire avec les mots de passe ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Il y a plusieurs erreurs à éviter avec les mots de passe, comme :
+      <ul>
+        <li>Utiliser le même mot de passe pour plusieurs comptes</li>
+        <li>Utiliser des mots ou des dates faciles à deviner (nom, anniversaire, animal …)</li>
+        <li>Partager vos mots de passe avec d’autres personnes</li>
+        <li>Écrire vos mots de passe sur un papier ou dans un fichier non sécurisé</li>
+        <li>Cliquer sur des liens ou des pièces jointes suspects qui pourraient voler vos mots de passe</li>
+      </ul>
+      </p>
+    </details>
+
+
+
+
+
+
+
+    <details>
+      <summary>
+        <h4>Dois-je changer mes mots de passe régulièrement ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Changer régulièrement vos mots de passe est une bonne pratique de sécurité, mais cela n'est pas toujours
+        nécessaire si vous utilisez déjà des mots de passe forts et uniques pour chaque compte. Assurez-vous de changer
+        vos mots de passe si vous soupçonnez une compromission.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4> Quelles sont les pratiques complémentaires pour protéger mes comptes en plus des mots de passe ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        En plus d'utiliser des mots de passe forts, il existe plusieurs pratiques complémentaires que vous pouvez mettre
+        en place pour renforcer la sécurité de vos comptes en ligne. Voici quelques-unes à considérer :
+      </p>
+
+      <ol>
+        <li>
+          <b>Authentification à deux facteurs (2FA) :</b><br>
+          La 2FA ajoute une couche supplémentaire de sécurité en demandant une deuxième méthode d'identification après
+          le mot de passe. Cela peut inclure un code envoyé à votre téléphone, une application d'authentification ou une
+          clé de sécurité physique. Même si quelqu'un obtient votre mot de passe, il ne pourra pas accéder à votre
+          compte sans la deuxième méthode d'authentification.
+        </li>
+        <li>
+          <b>Clés de sécurité : </b><br>
+          Les clés de sécurité sont des dispositifs physiques qui génèrent des codes d'authentification uniques. Elles
+          offrent une sécurité accrue par rapport aux méthodes de 2FA basées sur des SMS ou des applications, car elles
+          sont moins susceptibles d'être piratées.
+        </li>
+        <li>
+          <b>Codes de récupération :</b><br>
+          Lors de la configuration de la 2FA, de nombreux services vous proposent de générer des codes de récupération.
+          Ces codes peuvent être utilisés pour accéder à votre compte si vous perdez l'accès à votre deuxième méthode
+          d'authentification. Assurez-vous de stocker ces codes en lieu sûr.
+        </li>
+        <li>
+          <b>Vérification en deux étapes : </b><br>
+          Outre la 2FA, certaines plateformes offrent une vérification en deux étapes. Cela consiste à envoyer un code
+          de vérification à votre adresse e-mail ou à votre téléphone lorsque vous vous connectez à partir d'un nouvel
+          appareil ou navigateur.
+        </li>
+        <li>
+          <b>Surveillance des activités de compte : </b><br>
+          Activez les notifications pour être averti(e) des activités inhabituelles sur votre compte, comme des
+          connexions depuis des emplacements inhabituels. Cela vous permet de réagir rapidement si votre compte est
+          compromis.
+        </li>
+        <li>
+          <b>Mises à jour régulières : </b><br>
+          Assurez-vous que vos logiciels, applications et systèmes d'exploitation sont à jour avec les dernières mises à
+          jour de sécurité pour minimiser les vulnérabilités potentielles.
+        </li>
+        <li>
+          <b>Sensibilisation à la sécurité : </b><br>
+          Éduquez-vous sur les menaces en ligne courantes comme l'hameçonnage et les attaques par force brute. Soyez
+          sceptique envers les e-mails ou les liens suspects et ne partagez jamais vos informations d'identification.
+        </li>
+      </ol>
+      <p>
+        En combinant ces pratiques avec des mots de passe forts, vous pouvez considérablement réduire les risques de
+        compromission de vos comptes en ligne et protéger vos informations personnelles.
+
+      </p>
+
+
+
+
+
+
+    </details>
+
+
+
+
+
+
+
+
+
+    <a href="#generator">
+      <div class="arrow2"></div>
+    </a>
+
+
+    <footer>
+      <a href="https://icones8.fr/" target="_blank">Source images</a>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

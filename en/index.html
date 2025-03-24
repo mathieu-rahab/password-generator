@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../img/icon.png">
+  <title>Password generator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/main.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/button_desc.css">
+
+  <LINK rel="stylesheet" type="text/css" href="../style_g/lang.css">
+  <LINK rel="stylesheet" href="style/button_copy.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/responsive.css">
+  <LINK rel="stylesheet" type="text/css" href="../style_g/theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../button_copy.js"></script>
+  <script src="../script.js"></script>
+  <script src="../script_background.js"></script>
+  <script src="../annimtext.js"></script>
+
+</head>
+
+<body>
+
+
+  <div id="background"></div>
+  <div class="deb" id="generator">
+
+
+    <button id="buttonMenu" class="buttonMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
+        <path
+          d="M 24 4 C 22.423103 4 20.902664 4.1994284 19.451172 4.5371094 A 1.50015 1.50015 0 0 0 18.300781 5.8359375 L 17.982422 8.7382812 C 17.878304 9.6893592 17.328913 10.530853 16.5 11.009766 C 15.672739 11.487724 14.66862 11.540667 13.792969 11.15625 L 13.791016 11.15625 L 11.125 9.9824219 A 1.50015 1.50015 0 0 0 9.4257812 10.330078 C 7.3532865 12.539588 5.7626807 15.215064 4.859375 18.201172 A 1.50015 1.50015 0 0 0 5.4082031 19.845703 L 7.7734375 21.580078 C 8.5457929 22.147918 9 23.042801 9 24 C 9 24.95771 8.5458041 25.853342 7.7734375 26.419922 L 5.4082031 28.152344 A 1.50015 1.50015 0 0 0 4.859375 29.796875 C 5.7625845 32.782665 7.3519262 35.460112 9.4257812 37.669922 A 1.50015 1.50015 0 0 0 11.125 38.015625 L 13.791016 36.841797 C 14.667094 36.456509 15.672169 36.511947 16.5 36.990234 C 17.328913 37.469147 17.878304 38.310641 17.982422 39.261719 L 18.300781 42.164062 A 1.50015 1.50015 0 0 0 19.449219 43.460938 C 20.901371 43.799844 22.423103 44 24 44 C 25.576897 44 27.097336 43.800572 28.548828 43.462891 A 1.50015 1.50015 0 0 0 29.699219 42.164062 L 30.017578 39.261719 C 30.121696 38.310641 30.671087 37.469147 31.5 36.990234 C 32.327261 36.512276 33.33138 36.45738 34.207031 36.841797 L 36.875 38.015625 A 1.50015 1.50015 0 0 0 38.574219 37.669922 C 40.646713 35.460412 42.237319 32.782983 43.140625 29.796875 A 1.50015 1.50015 0 0 0 42.591797 28.152344 L 40.226562 26.419922 C 39.454197 25.853342 39 24.95771 39 24 C 39 23.04229 39.454197 22.146658 40.226562 21.580078 L 42.591797 19.847656 A 1.50015 1.50015 0 0 0 43.140625 18.203125 C 42.237319 15.217017 40.646713 12.539588 38.574219 10.330078 A 1.50015 1.50015 0 0 0 36.875 9.984375 L 34.207031 11.158203 C 33.33138 11.54262 32.327261 11.487724 31.5 11.009766 C 30.671087 10.530853 30.121696 9.6893592 30.017578 8.7382812 L 29.699219 5.8359375 A 1.50015 1.50015 0 0 0 28.550781 4.5390625 C 27.098629 4.2001555 25.576897 4 24 4 z M 24 7 C 24.974302 7 25.90992 7.1748796 26.847656 7.3398438 L 27.035156 9.0644531 C 27.243038 10.963375 28.346913 12.652335 30 13.607422 C 31.654169 14.563134 33.668094 14.673009 35.416016 13.904297 L 37.001953 13.207031 C 38.219788 14.669402 39.183985 16.321182 39.857422 18.130859 L 38.451172 19.162109 C 36.911538 20.291529 36 22.08971 36 24 C 36 25.91029 36.911538 27.708471 38.451172 28.837891 L 39.857422 29.869141 C 39.183985 31.678818 38.219788 33.330598 37.001953 34.792969 L 35.416016 34.095703 C 33.668094 33.326991 31.654169 33.436866 30 34.392578 C 28.346913 35.347665 27.243038 37.036625 27.035156 38.935547 L 26.847656 40.660156 C 25.910002 40.82466 24.973817 41 24 41 C 23.025698 41 22.09008 40.82512 21.152344 40.660156 L 20.964844 38.935547 C 20.756962 37.036625 19.653087 35.347665 18 34.392578 C 16.345831 33.436866 14.331906 33.326991 12.583984 34.095703 L 10.998047 34.792969 C 9.7799772 33.330806 8.8159425 31.678964 8.1425781 29.869141 L 9.5488281 28.837891 C 11.088462 27.708471 12 25.91029 12 24 C 12 22.08971 11.087719 20.290363 9.5488281 19.160156 L 8.1425781 18.128906 C 8.8163325 16.318532 9.7814501 14.667839 11 13.205078 L 12.583984 13.902344 C 14.331906 14.671056 16.345831 14.563134 18 13.607422 C 19.653087 12.652335 20.756962 10.963375 20.964844 9.0644531 L 21.152344 7.3398438 C 22.089998 7.1753403 23.026183 7 24 7 z M 24 16 C 19.599487 16 16 19.59949 16 24 C 16 28.40051 19.599487 32 24 32 C 28.400513 32 32 28.40051 32 24 C 32 19.59949 28.400513 16 24 16 z M 24 19 C 26.779194 19 29 21.220808 29 24 C 29 26.779192 26.779194 29 24 29 C 21.220806 29 19 26.779192 19 24 C 19 21.220808 21.220806 19 24 19 z" />
+      </svg>
+      <span>Setting</span>
+    </button>
+
+    <div id="sideMenu" class="side-menu">
+      <button id="buttonMenuClose">
+        <img src="../img/annuler.png" alt="retour en arriere">
+      </button>
+      <p class="titleSidemenu">Setting</p>
+      <button class="noselect" onclick="setTheme()">
+        <span class='text' id="buttonText">
+          Light mode
+        </span>
+        <span class="icon">
+          <img src="../img/sun.png" alt="Icon" class="icon-img" id="iconImage">
+        </span>
+      </button>
+
+
+
+
+      <nav>
+        <ul>
+
+          <li class="menu-deroulant">
+
+            <p><img src="../img/flags/usa.png" alt="flag" class="flag">English</p>
+
+            <ul class="sous-menu">
+
+              <li><a href="../fr/index.html"> <img src="../img/flags/french.png" alt="flag_french"
+                    class="flag">Français</a></li>
+              <li style="display: none;"><a href="#"> <img src="../img/flags/spain.png" alt="flag_spain" class="flag">Español</a></li>
+
+            </ul>
+
+
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+    </div>
+
+
+
+    <div class="menu t1">
+      <h1>Password generator</h1>
+      <form id="checkbox">
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="min" name="min" checked><label
+            for="min" class="checkSelect">Lowercase</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="maj" name="maj" checked><label
+            for="maj" class="checkSelect">Uppercase</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="nb" name="nb" checked><label
+            for="nb" class="checkSelect">Numbers</label></div>
+        <div class="input_checkbox"><input class="c group-required" type="checkbox" id="carac_spec" name="carac_spec"
+            checked><label for="carac_spec" class="checkSelect">Symbols</label></div>
+      </form>
+
+      <br>
+
+      <input type="range" class="barre" list="tickmarks" name="nb_carac" id="nb_carac" oninput="ActuNB(this.value)"
+        min="4" max="50" value="12">
+      <br>
+
+      <p id="afficheLen">
+        Password length : <output id="output">15</output>
+      </p>
+
+
+
+
+    </div>
+
+
+
+    <div class="result t1">
+      <br><br>
+      <div id="generatePasswordId">
+
+        <span id="password"></span>
+
+        <button class="actu-button" onclick="generatePassword(document.getElementById('nb_carac').value)">
+          <img src="../img/actu_black.png" alt="Bouton actualisation du mdp" class="actu-logo" id="actu-logo">
+        </button>
+        <span id="badge"></span>
+
+      </div>
+
+      <hr id="ligne">
+
+      <div class="container">
+        <button id="copie" class="ClassCopie" onclick="copyToClipboard('#password', this)"></button>
+      </div>
+
+    </div>
+
+    <div class="container2">
+      <div class="contenairArrow1"></div>
+    </div>
+    <a href="#faq">
+      <div class="arrow"></div>
+    </a>
+
+
+
+
+  </div>
+
+
+
+  <div class="faq" id="faq">
+
+
+    <h1 id='annimH1'></h1>
+
+
+    <details>
+      <summary>
+        <h4>How are passwords generated ?</h4>
+        <div class="logo_plus">
+          <span>+</span>
+        </div>
+      </summary>
+      <p> Passwords are generated securely and privately on your own computer. When you request the generation of a
+        password, the process takes place only in your web browser. No password is transmitted over the Internet or
+        stored on our servers. <br><br> To accomplish this, we use a cryptographically secure random number generation
+        method provided by the browser, called window.crypto.getRandomValues(). This method generates random numbers
+        from a random data source of your computer’s operating system. These random numbers are then used to choose the
+        characters that make up your password. <br><br> In summary, you can be assured that the passwords generated on
+        this site are unique, random and available only on your browser. No information about these passwords is sent to
+        our servers or to other locations, which ensures the privacy and security of your information. <br><br> It
+        should be noted that this password generator has not been supervised by a cyber-security expert </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>Are the passwords generated on this site secure ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p> Yes, the passwords generated here are secure. The method used to generate the passwords is based on
+        cryptographically secure random values, which makes them extremely difficult to predict or guess. </p>
+    </details>
+
+
+
+    <details>
+      <summary>
+        <h4>What are the benefits of using a random password ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p> A random password is harder to guess or hack than a password based on personal words or dates. It therefore
+        offers better protection of your accounts and online data. </p>
+    </details>
+
+    <details>
+      <summary>
+        <h4>What password length is recommended ?</h4>
+
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Passwords should be at least 12 characters long to ensure maximum security. The longer the password, the harder
+        it is to guess or break.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>How do I remember or store my passwords ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        It's not easy to remember several random passwords. You can use a password manager, which is an application or
+        service that automatically stores and fills in your passwords on the websites you visit. You then only need to
+        remember one master password to access your manager. There are several free and paid password managers, such as
+        Proton Pass, Dashlane and Bitwarden.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>What are the mistakes not to make with passwords ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        There are several mistakes to avoid with passwords, such as:
+      <ul>
+        <li>Use the same password for multiple accounts</li>
+        <li>Use words or dates that are easy to guess (name, birthday, animal …)</li>
+        <li>Share your passwords with other people</li>
+        <li>Write your passwords on a paper or in an unsecured file</li>
+        <li>Click on suspicious links or attachments that could steal your passwords</li>
+      </ul>
+      </p>
+    </details>
+
+
+
+
+
+
+
+    <details>
+      <summary>
+        <h4>Do I have to change my passwords regularly?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        Changing your passwords regularly is good security practice, but not always necessary if you already use strong,
+        unique passwords for each account. Be sure to change your passwords if you suspect a compromise.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        <h4>How can I protect my accounts in addition to my passwords ?</h4>
+        <div class="logo_plus"><span>+</span></div>
+      </summary>
+      <p>
+        In addition to using strong passwords, there are several complementary practices you can put in place to
+        strengthen the security of your online accounts. Here are a few to consider :
+      </p>
+
+      <ol>
+        <li> <b>Two-factor authentication (2FA):</b><br> 2FA adds an extra layer of security by requiring a second
+          method of identification after the password. This can include a code sent to your phone, an authentication app
+          or a physical security key. Even if someone gets your password, they won’t be able to access your account
+          without the second method of authentication. </li>
+        <li> <b>Security keys: </b><br> Security keys are physical devices that generate unique authentication codes.
+          They offer increased security over 2FA methods based on SMS or apps, because they are less likely to be
+          hacked. </li>
+        <li> <b>Recovery codes:</b><br> When setting up 2FA, many services offer you to generate recovery codes. These
+          codes can be used to access your account if you lose access to your second method of authentication. Make sure
+          to store these codes in a safe place. </li>
+        <li> <b>Two-step verification: </b><br> In addition to 2FA, some platforms offer two-step verification. This
+          involves sending a verification code to your email address or phone when you log in from a new device or
+          browser. </li>
+        <li> <b>Account activity monitoring: </b><br> Enable notifications to be alerted of unusual activities on your
+          account, such as logins from unusual locations. This allows you to react quickly if your account is
+          compromised. </li>
+        <li> <b>Regular updates: </b><br> Make sure your software, apps and operating systems are up to date with the
+          latest security updates to minimize potential vulnerabilities. </li>
+        <li> <b>Security awareness: </b><br> Educate yourself on common online threats such as phishing and brute force
+          attacks. Be skeptical of suspicious emails or links and never share your credentials. </li>
+      </ol>
+      <p>
+        By combining these practices with strong passwords, you can significantly reduce the risk of your online
+        accounts being compromised and protect your personal information.
+
+      </p>
+
+
+
+
+
+
+    </details>
+
+
+
+
+
+
+
+
+
+    <a href="#generator">
+      <div class="arrow2"></div>
+    </a>
+
+
+    <footer>
+      <a href="https://icones8.fr/" target="_blank">Source images</a>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
