@@ -8,7 +8,6 @@
 
 
 
-
 body{margin:0; }/*background-color: rgb(236, 236, 255);*/
 
 #background{
@@ -219,6 +218,10 @@ label {
 
 /*---------------------------------------------------------------------------------------------------------*/
 
+
+#annimH1 {
+  word-break: break-all;
+}
 
 
 .faq{background-color: #F8F9FA;
