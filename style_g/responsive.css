@@ -1,102 +1,167 @@
-
-
-
 @media (max-width: 1915px) {
 
 
 
-    #badge{
-      position: relative;
-      padding-left: 0;
-      padding-right: 0;
-      margin-top: 10px;
-      margin-left: 35%;
+  #badge {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+    margin-left: 35%;
 
-      width: 30%;
-      min-width: 160px;
-      text-align: center;
-    }
-    #password{width: 76%;}
-    
-    /*
+    width: 30%;
+    min-width: 160px;
+    text-align: center;
+  }
+
+  #password {
+    width: 76%;
+  }
+
+  /*
     .c{margin-left: 5%;}
     label{margin-right: 70%;}*/
-     }
-   
-  
-  
-  @media (max-width: 1500px) {
-   #themeButton{width: 40px ;overflow: hidden;}
-    #themeButton p{display: none;}
-    
-
-   #password{width:74%}
-   .menu, .result{width: 60%;}
- 
-    }
-  
-   
-  
-  
-  @media (max-width: 1000px) {
-      #password{width:72%}
-      .menu, .result{width: 90%;}
-      details{width: 85%;}
-      summary h4{width: 70%;}
-     
-      
-      
-       }
-     
-      
-  
-    
-  
-  
-  
-  
-  @media (max-width: 600px) {
-    #background{height: 400px;}
-    .deb{padding-top: 5px;height: 600px;}
-  
+}
 
 
 
-  
-    .menu, .result{width: 96%;}
-    .menu >h1{font-size: 20px;
-              margin: auto;
-              
-              padding-top: 10px;
-              padding-right: 25%;
-              
-            }
-    
-    #checkbox{padding-top: 15px;}          
-    .input_checkbox{
-      
-      margin-left: 15%;}
+@media (max-width: 1500px) {
+  #themeButton {
+    width: 40px;
+    overflow: hidden;
+  }
 
-    #afficheLen{margin-bottom: -15px;}
-    .result{margin-top: 0px;}
-    #password{width: 70%}
-  
-    .faq{margin-top: -280px;}
-      .faq h1{width: 80%;font-size: 27px;}
-    #badge{margin-left: 15%;width: 70%;text-align: center;     padding-left: 0;
-      padding-right: 0;}
-
-      
-    summary{font-size: 20px;}
-      details p{font-size: 19px;}
-          
-           }
-         
+  #themeButton p {
+    display: none;
+  }
 
 
-@media (max-width: 450px) { 
-    #password{width: 60%;}
-   
-                  
-                   }
-                 
+  #password {
+    width: 74%
+  }
+
+  .menu,
+  .result {
+    width: 60%;
+  }
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+  #password {
+    width: 72%
+  }
+
+  .menu,
+  .result {
+    width: 90%;
+  }
+
+  details {
+    width: 85%;
+  }
+
+  summary h4 {
+    width: 70%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  #background {
+    height: 400px;
+  }
+
+  .deb {
+    padding-top: 5px;
+    height: 600px;
+  }
+
+
+
+
+
+  .menu,
+  .result {
+    width: 96%;
+  }
+
+  .menu>h1 {
+    font-size: 20px;
+    margin: auto;
+
+    padding-top: 10px;
+    padding-right: 25%;
+
+  }
+
+  #checkbox {
+    padding-top: 15px;
+  }
+
+  .input_checkbox {
+
+    margin-left: 15%;
+  }
+
+  #afficheLen {
+    margin-bottom: -15px;
+  }
+
+  .result {
+    margin-top: 0px;
+  }
+
+  #password {
+    width: 70%
+  }
+
+  .faq {
+    margin-top: -280px;
+  }
+
+  .faq h1 {
+    width: 80%;
+    font-size: 27px;
+  }
+
+  #badge {
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  summary {
+    font-size: 20px;
+  }
+
+  details p {
+    font-size: 19px;
+  }
+
+}
+
+
+
+@media (max-width: 450px) {
+  #password {
+    width: 60%;
+  }
+
+
+}
